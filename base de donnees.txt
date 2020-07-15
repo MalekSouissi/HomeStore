@@ -1,0 +1,57 @@
+
+//creation de table des produits
+CREATE TABLE products (
+id INT(11)  AUTO_INCREMENT PRIMARY KEY,
+code VARCHAR(255) NOT NULL,
+name VARCHAR(255) NOT NULL,
+description VARCHAR(255) NOT NULL,
+price FLOAT NOT NULL,
+quantity int(30),
+image VARCHAR(255),
+category VARCHAR(255)
+)
+
+//creations de table des utilisateurs
+CREATE TABLE users (
+UserId INT(11)  AUTO_INCREMENT PRIMARY KEY,
+UserName VARCHAR(255) NOT NULL,
+adress VARCHAR(255) Not NULL,
+email VARCHAR(255) NOT NULL,
+password VARCHAR(255) NOT NULL
+)
+
+
+
+//liste des produits
+
+
+INSERT INTO `products`(`id`, `code`, `name`, `price`, `description`, `category`, `image`) VALUES
+(2,'K147','Korkom','1.0',' C\'est une substance colorante jaune. Le curcuma est employé en cuisine pour colorer certaines préparations telles les rôtis,le riz et les pâtes.
+','spices','korkom.jpg'),
+(3,'p123', 'Paprika','2.0','Le paprika ou poivre rouge est une épice en poudre de couleur rouge obtenue à partir du fruit mûr, séché et moulu du piment doux ou poivron ','spices','felfel-merhi.jpg'),
+(4,'k1258','Karwia','1.5','Le carvi ou cumin des prés est une plante herbacée bisannuelle de la famille des apiacées, cultivée pour ses feuilles et surtout ses graines, utilisées pour leurs qualités aromatiques et médicinales.','spices','karwiya.jpg'),
+(5,'h456','Harissa','2.2','La harissa ou l\'harissa est une purée de piments rouges originaire de Tunisie. Les piments sont séchés au soleil puis broyés avec des épices, soit du cumin.','spices','harissa.jpeg'),
+(6,'t111','Tabel','1.5','Le tabil tabel ou tawabel à Blida, est un mélange d'épices qui entre dans l'assaisonnement d\'un grand nombre de plats en Algérie et en Tunisie.','spices','tabel.jpg'),
+(7,'p456','Poivre Noir','1.8','Le Poivre noir développe parfois une note de fraîcheur très agréable. Il parfume les huiles d\'olives, les tartes, quiches, potages et soupes, les garnitures de légumes, sauces.','spices','poivre-noir.jpg'),
+(8,'r789','Ras el Hanout','2.5','Condiment composé Ras el Hanout. C\'est un condiment composé connu,constitué d\'un mélangede poivre,d\'écorce de canelle,de clou girofles et de boutons de rose,le tout moulu et tamisé.','spices','ras-hanout.jpg'),
+(9,'z1258','Zaatar','3.2','C\'est également le terme générique désignant la famille de plantes des Lamiacées. Comme pour tout mélange, les proportions sont variables d\’un épicier à l\’autre, mais cela comprend généralement du thym.','spices','zaatar.jpg'),
+(10,'k456','Kerfa','4.0','La cannelle a une saveur douceâtre et raffinée, très aromatique. La cannelle a des utilisations culinaires très diversifiées : les compotes de pommes, les pains d\’épices, le vin chaud.','spices','kerfa.jpg'),
+(11,'o123','Oud Charki','5.0','La nature chaude et piquante. Dans la cuisine, le clou de girofle est utilisé comme condiment dans certains plats. Il parfume les ragoûts, les marinades, les courts bouillons,les civets et certaines charcuteries','spices','oud-cherki.jpg'),
+(12,'t147','Thoum','2.5','ail cultivé est une espèce de plante potagère vivace monocotylédone dont les bulbes, à l\'odeur et au goût forts, sont souvent employés comme condiment en cuisine.','spices','garlic.jpg'),
+(13,'b456','Besbes','1.6','L\'anis vert est une plante aromatique , très odorante et décorative.L\'anis est très utilisé en boulangerie pour parfumer les bretzels, fougasses, pain d\'épices et petits gâteaux à l\'anis, le pain frais.','spices','besbes.jpg'),
+(14,'z258','Zanageabil','4.0','Le gingembre en poudre a une saveur chaude et délicatement boisée. Il n\'est guère utilisé qu\'en confiserie et pâtisserie et pour aromatiser les boissons. Il est utilisé sous forme moulue ou fraîche.','spices','zanjabil.jpg'),
+(15,'h963','Helba','2.2','Fenugrec ou Trigonelle est une plante herbacée de la famille des Fabacea. Il compte parmi les plus anciennes plantes médicinales et culinaires de l\’histoire de l\’humanité. Le fenugrec est une petite plante légumineuse dont on mange les graines comme épice.','spices','helba.jpg'),
+(16,'k144896','Kezbra','1.8','La coriandre est une plante annuelle aromatique qui pousse partout dans le monde,Elle est unique parce qu\’elle est à la fois une herbe et une épice,séchées et utilisées en totalité ou sous forme de poudre.','spices','kezbara.jpg'),
+INSERT INTO `products`(`id`, `code`, `name`, `price`, `description`, `category`, `image`) VALUES (17,'b789','Bsisa','5.5','La Bsissa est un mélange de farine de blé ou d\'orge, avec de la farine de pois chiche et des épices.Elle est un aliment national et traditionnel riches en céréales et en valeur nutritionnelle.','beans','bsissa.jpg'),
+(18,'ad147','Aades','2.8','some description','beans','aades.jpg'),
+(19,'f258','Foul','5.8','some description','beans','foul.jpg'),
+(20,'h258','Homs','7.0','some description','beans','homs.jpg'),
+(21,'m789','Maiis','8.2','some description','beans','mais.jpg'),
+(22,'l56','Loubia','3.8','some description','beans','loubya.jpg'),
+(23,'k258','couscous','2.8','some description','beans','koskos.jpg'),
+(24,'8258','sorgho','4.0','some description','beans','dro3.jpg'),
+(25,'ch785','Chorba Frik','5.0','La semoule d\'orge Frik est un ingrédient principalement utilisé dans la chorba, une soupe très consommée en Tunisie et Algérie. C\'est un plat très apprécié durant le Ramadan.','beans','frik.jpg'),
+(26,'m1258','Mhamsa','2.8','some description','beans','mhames.png'),
+(27,'ml789','Mloukhia','8.0','La mloukhia est sous forme de poudre naturel obtenue à partir des feuilles de la plante corète.Son goût bien particulier permet élaboration de délicieuse sauce de couleur verte foncée.','beans','mloukhiya.jpg'),
+(28,'NN258','Nwasser','2.0','some description','beans','nwasser.jpeg'),
+(29,'bb147','Borghol','3.2','Grains de blé dur précuits Borghol cuites selon une méthode traditionnelle à l\’eau et à la vapeur.Le blé mondé se consomme en accompagnement (de viandes, de poissons ou de légumes).','beans','borghol.jpeg')
